@@ -1,0 +1,36 @@
+body {
+  background-color: #000;
+  height: 100vh;
+  margin: 0;
+}
+.card {
+  display: flex;
+  justify-content: center;
+  padding: 150px 300px;
+}
+.text-block {
+  flex: 1;
+  color: #fff;
+}
+.image-block {
+  flex: 1;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.mobile-image {
+  display: none;
+}
+
+@media only screen and (max-width: 500px) {
+  .card {
+    flex-direction: column-reverse;
+    padding: 100px 30px;
+  }
+  .mobile-image {
+    display: block;
+    width: 100%;
+  }
+  .desktop-image {
+    display: none;
+  }
+}
