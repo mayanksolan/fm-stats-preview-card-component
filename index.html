@@ -12,6 +12,11 @@
       href="./images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Frontend Mentor | Stats preview card component</title>
 
@@ -27,28 +32,50 @@
     </style>
   </head>
   <body>
-    <div class="card">
-      <div class="text-block">
-        <div class="head-text">Get insights that help your business grow.</div>
-      </div>
-      <div class="image-block">
-        <img
-          class="desktop-image"
-          src="./images/image-header-desktop.jpg"
-          alt=""
-        />
-        <img
-          class="mobile-image"
-          src="./images/image-header-mobile.jpg"
-          alt=""
-        />
+    <div class="card-wrapper">
+      <div class="card">
+        <div class="text-block-wrapper">
+          <div class="text-block">
+            <h1>Get <span>insights</span> that help your business grow.</h1>
+            <div class="content">
+              Discover the benefits of data analytics and make better decisions
+              regarding revenue, customer experience, and overall efficiency.
+            </div>
+            <div class="stats">
+              <div class="stats-item">
+                <div class="number">10k+</div>
+                <div class="text">Companies</div>
+              </div>
+              <div class="stats-item">
+                <div class="number">314</div>
+                <div class="text">Templates</div>
+              </div>
+              <div class="stats-item">
+                <div class="number">12M+</div>
+                <div class="text">Queries</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="image-block">
+          <img
+            class="desktop-image"
+            src="./images/image-header-desktop.jpg"
+            alt=""
+          />
+          <img
+            class="mobile-image"
+            src="./images/image-header-mobile.jpg"
+            alt=""
+          />
+        </div>
       </div>
     </div>
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      >. Coded by <a href="#">Mayank</a>.
     </div>
   </body>
 </html>
